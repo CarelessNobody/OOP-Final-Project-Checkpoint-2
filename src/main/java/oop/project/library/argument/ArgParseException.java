@@ -1,6 +1,6 @@
 package oop.project.library.argument;
 
-public class ArgParseException extends RuntimeException {
+public class ArgParseException extends Exception {
 
     String input;
 
