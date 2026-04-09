@@ -3,7 +3,7 @@ package oop.project.library.argument;
 import java.util.List;
 import java.util.function.Function;
 
-public class ParseArgType {
+public final class ParseArgType {
     private ParseArgType() {}
 
     public static <T> T parse(String input, Function<String, T> parser) throws ArgParseException {
