@@ -19,5 +19,11 @@ custom parsing function with some built-in double, int, and boolean parsing. How
 I could handle exceptions better (not just catching them all and more info on specific).
 
 ### Individual Review (Command Lead)
+Ephraim - I think the use of a utility class along with static methods was a good choice for the 
+argument system's implementation, as it keeps the system simple and easy while also supporting 
+various custom parsing through the function parameters. Having built in parsing methods was also a 
+nice touch and improves usability. The primary critique I would have was already mentioned by Ruihan, 
+which is providing more specific exception messages. Handling these errors in a more specific manner
+would go a long way in users debugging issues.
 
 ### Team Review
