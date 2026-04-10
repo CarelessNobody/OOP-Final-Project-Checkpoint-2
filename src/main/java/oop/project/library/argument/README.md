@@ -27,3 +27,7 @@ which is providing more specific exception messages. Handling these errors in a 
 would go a long way in users debugging issues.
 
 ### Team Review
+Currently, we both agree on the same points that the overall system's design is a good starting point and like
+its format as a utility function with some built-in parsing methods, but
+we are still brainstorming on how we could make the exception system better. I think some exceptions can be 
+handled more specifically, and maybe I can make the ArgParseException return more useful information.

@@ -26,8 +26,9 @@ flexibility for things like optional arguments.
 ### Individual Review (Argument Lead)
 Ruihan - I think the modularity in the command parser is nice, but I think having a separate
 parsedComm is a bit excessive instead of having the class store the map. I think a 
-builder design pattern would work great here. The only real issue here is I think the 
-named and positional arguments are very separated and a bit awkward.
+builder design pattern would work great here. The only real issues I see is the 
+named and positional arguments are very separated and a bit awkward and I think exceptions
+could be handled better and return more specific info.
 
 ### Team Review
 The overall design is modular, maintaining a clear separation of responsibilities between the argument
@@ -35,4 +36,5 @@ parsing and command handling. This makes the system easy to understand and exten
 strength is the flexibility given by the custom parser interface, which allows for custom types and
 validations without the need to modify the Command System. Though, the API could be more unified, such as
 through the handling of optional arguments. Improvement towards how positional and named arguments interact
-with each other may also be considered.
+with each other may also be considered. Moreover, future implementation will try to handle exceptions with
+more care and info for debugging and making it more user-friendly.
