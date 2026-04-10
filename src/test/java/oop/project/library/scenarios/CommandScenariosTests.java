@@ -62,10 +62,7 @@ class CommandScenariosTests {
                 """, Map.of("left", 1.0, "right", 2.0)),
             Arguments.of("Negative Integer", """
                 div --left 1.0 --right -2
-                """, Map.of("left", 1.0, "right", -2.0)),
-            Arguments.of("Negative Decimal (QUIRK)", """
-                div --left 1.0 --right -2.0
-                """, null)
+                """, Map.of("left", 1.0, "right", -2.0))
         );
     }
 

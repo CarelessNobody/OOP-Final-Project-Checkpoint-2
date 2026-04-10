@@ -31,10 +31,6 @@ public final class CommandScenarios {
             BasicArgs args = new Input(arguments).parseBasicArgs();
 
             String rightRaw = args.named().get("right");
-            if (rightRaw != null && rightRaw.startsWith("-") && rightRaw.contains(".")) {
-                throw new IllegalArgumentException("negative decimal values are REJECTED here");
-            }
-
             CommSpec spec = new CommSpec("div").addNamed("left", ParseArgType::parseDouble).addNamed("right", ParseArgType::parseDouble);
 
             ParsedComm result = CommParsers.parseNamed(spec, args);
